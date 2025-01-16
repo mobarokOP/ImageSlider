@@ -26,6 +26,20 @@ android {
     }
 }
 
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)       /// << --- ADD This
+    }
+}
+
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17          ////  << --- ADD This
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+
 dependencies {
 
     implementation libs.appcompat
@@ -41,7 +55,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.mobarok.autoimagelider'
             artifactId = 'AutoimageSlider'
-            version = "0.0.2"
+            version = "0.0.3"
             pom {
                 description = 'First Android Library'
             }
