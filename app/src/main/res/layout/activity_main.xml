@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.mobarok.autoimageslider.ImageSlider
+        android:id="@+id/imageSlider"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        app:autoSlide="true"
+        app:slideDelay="2000"
+        app:itemScaleType="FIT_XY"
+        app:itemMargin="20dp"
+        app:itemPadding="50dp" />
+
+<!--
+
+    <com.mobarok.autoimageslider.ImageSlider
+        android:id="@+id/imageSlider"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        app:autoSlide="true" &lt;!&ndash; Set to true for automatic sliding &ndash;&gt;
+        app:slideDelay="2000" &lt;!&ndash; Delay between slides in milliseconds &ndash;&gt;
+        app:itemScaleType="FIT_XY" &lt;!&ndash; ScaleType for each item &ndash;&gt;
+        app:itemMargin="20dp" &lt;!&ndash; Margin between items &ndash;&gt;
+        app:itemPadding="50dp" /> &lt;!&ndash; Padding around each item &ndash;&gt;
+
+
+    -->
+
+</LinearLayout>
